@@ -36,17 +36,17 @@ func main(){
 
 	// type switch
 
-	whoami := func(i interface{}){
-		switch t := i.(type){
-		case int:
-			fmt.Println("Integar")
-		case string:
-			fmt.Println("String")
-		case bool:
-			fmt.Println("Boolean")
-		default:
-			fmt.Println("Others", t)
-		}
-	}
-	whoami(6)
+	// whoami := func(i interface{}){
+	// 	switch t := i.(type){
+	// 	case int:
+	// 		fmt.Println("Integar")
+	// 	case string:
+	// 		fmt.Println("String")
+	// 	case bool:
+	// 		fmt.Println("Boolean")
+	// 	default:
+	// 		fmt.Println("Others", t)
+	// 	}
+	// }
+	// whoami(6)
 }
