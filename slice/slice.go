@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // import "fmt"
 
 func main() {
@@ -32,4 +34,13 @@ func main() {
 	// numbers = append(numbers[:2], numbers[3:]...)
 
 	// fmt.Println(numbers)
+
+	//copy function
+	nums := make([]int, 0, 5)
+	nums = append(nums, 1)
+	nums2 := make([]int, len(nums))
+
+	copy(nums2, nums)
+
+	fmt.Println(nums, nums2)
 }
