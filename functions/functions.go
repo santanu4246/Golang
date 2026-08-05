@@ -21,13 +21,24 @@ func divied(a,b float64) (float64, error){
 	return a/b, nil;
 }
 
+func sum(nums ...int) int{
+
+	total:=0
+
+	for _, val := range nums{
+		total+=val;
+	}
+
+	return total;
+}
+
 func main(){
 	// greet()
 	// sum, sub:= add(6,5)
 
 	// fmt.Println(sum,sub)
 
-	res, err := divied(10,0)
+	res, err := divied(10,2)
 
 	if err != nil{
 		fmt.Println(err)
@@ -42,5 +53,9 @@ func main(){
 	}
 
 	greet("Santanu")
+
+	//variadic function
+	nums:= []int{12,15}
+	fmt.Println(sum(nums...))
 
 }
