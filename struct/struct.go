@@ -5,7 +5,7 @@ import "fmt"
 type User struct {
 	Name string
 	age  int
-	// Address Address
+	Address
 }
 
 // nested struct
@@ -23,10 +23,10 @@ func main() {
 	user := User{
 		Name: "Santanu",
 		age:  22,
-		// Address: Address{
-		// 	City: "bankura",
-		// 	Country: "India",
-		// },
+		Address: Address{
+			City: "bankura",
+			Country: "India",
+		},
 	}
 
 	fmt.Println(user)
